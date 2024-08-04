@@ -1,0 +1,19 @@
+all:
+  children:
+    clickhouse:
+      hosts:
+        clickhouse-01:
+          ansible_host: 89.169.170.219
+          ansible_ssh_user: devops
+
+    vector:
+      hosts:
+        vector-01:
+          ansible_host: 89.169.172.201
+          ansible_ssh_user: devops
+
+    lighthouse:
+      hosts:
+        lighthouse-01:
+          ansible_host: 89.169.163.160
+          ansible_ssh_user: devops
